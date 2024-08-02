@@ -8,4 +8,4 @@ export const configs = {
 		plugins: [pluginName],
 		rules: Object.fromEntries(Object.keys(rules).map(ruleName => [`${pluginName}/${ruleName}`, 'error'])),
 	},
-} as Record<string, TSESLint.Linter.Config>;
+} as Record<string, TSESLint.Linter.ConfigType>;
