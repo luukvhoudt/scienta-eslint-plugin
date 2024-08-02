@@ -26,7 +26,7 @@ runRuleTester({
 			@Component({
 				selector: "example",
 				template: "<ng-content></ng-content>",
-				styleUrls: ["example.component.scss"],
+				styleUrl: "example.component.scss",
 				changeDetection: ChangeDetectionStrategy.OnPush,
 			})
 			class ExampleComponent {}
@@ -54,7 +54,7 @@ runRuleTester({
 				template: "<ng-content></ng-content>",
 				selector: "example",
 				changeDetection: ChangeDetectionStrategy.OnPush,
-				styleUrls: ["example.component.scss"],
+				styleUrl: "example.component.scss",
 			})
 			class ExampleComponent {}
 		`,

@@ -5,7 +5,16 @@ export const ruleName = 'ng-module-decorator-props-order';
 export const messageId = 'ngModuleDecoratorPropsOrderError' as const;
 
 const allNgModulesSelector = 'ClassDeclaration > Decorator > CallExpression > Identifier[name="NgModule"]';
-const allPropNamesSorted = ['imports', 'declarations', 'exports'];
+const allPropNamesSorted = [
+	'id',
+	'jit',
+	'bootstrap',
+	'imports',
+	'providers',
+	'schemas',
+	'declarations',
+	'exports',
+];
 
 export default createEslintRule<[], typeof messageId>({
 	name: ruleName,

@@ -9,6 +9,7 @@ runRuleTester<typeof messageId, []>({
 		`
 			@DontParseMe()
 			@NgModule({
+				providers: [],
 				declarations: [],
 				exports: [
 					ExampleComponent
@@ -33,6 +34,7 @@ runRuleTester<typeof messageId, []>({
 					ExampleComponent
 				],
 				declarations: [],
+				providers: [],
 			})
 			class ExampleModule {}
 		`,
